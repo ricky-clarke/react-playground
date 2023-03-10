@@ -1,0 +1,47 @@
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding:1em 2em;
+
+    a {
+        text-decoration: none;
+    }
+
+    .header__logo {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        span {
+            font-size:1.5rem;
+            font-weight: 100;
+            letter-spacing: 5px;
+        }
+
+        span {
+            color:#fff;
+            text-decoration: none;
+        }
+
+        .App-logo {
+            width: 100px;
+          }
+
+    }
+
+    .header__buttons {
+        display: flex;
+
+        .hamburger_button {
+            margin-left:2.5em;
+        }
+
+    }
+
+}
+
+h1 {
+    font-size:2em;
+    font-weight: 100;
+}

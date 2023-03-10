@@ -1,0 +1,70 @@
+@import '../../assets/styles/styles';
+
+.accordion {
+
+    &__container {
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom:1em;
+        max-width:800px;    
+        padding-bottom:1em;
+    }
+
+    &__button {
+        align-items: center;
+        background: none;
+        border:0;
+        color:#fff;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        font-size:1.3em;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+
+        &:hover, 
+        &--selected {
+            color: $gold;
+
+            svg {
+                path {
+                    fill: $gold;
+                }
+            }
+
+        }
+
+        svg {
+            height: auto;
+            rotate: 0;
+            width:20px;
+            transition: 0.1s rotate ease-in-out;
+        }
+
+        &--selected {
+
+            svg {
+                rotate: 180deg;
+                transition: 0.1s rotate ease-in-out;
+            }
+
+        }
+
+
+    }
+
+    &__copy {
+        height: 0;
+        overflow: hidden;
+
+        &--expanded {
+            height: 100%;
+        }
+
+        > div {
+            padding:1em 5em 1.5em 0;
+        }
+
+    }
+
+}

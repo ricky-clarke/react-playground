@@ -1,0 +1,34 @@
+@import '../../assets/styles/styles';
+
+.contrast_button {
+    background:none;
+    border:0;
+    color:#fff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size:1.3rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    position:relative;
+    z-index:99;
+
+    span {
+
+        &.contract_button--light,
+        &.contract_button--dark  {
+            &:hover {
+                color: $gold;
+            }
+        }
+
+        &.contract_button--dark  {
+                color: $gold;
+        }
+
+    }
+
+    .contrast_button--active {
+            color: $gold;
+    }
+
+}

@@ -1,0 +1,105 @@
+@import './assets/styles/styles';
+
+body {
+  background-color: #282c34;
+  color:#fff;
+  min-height: 100vh;
+  transition:0.5s background-color ease;
+}
+
+#root {
+  height:100vh;
+  height: 100dvh;
+}
+
+.App__main {
+  // min-height: calc(100dvh - 103px);
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  margin-inline: auto;
+  max-width:1200px;
+  padding-block: 4em;
+}
+
+p {
+  font-size:1.1em;
+  line-height: 1.6em;
+  margin:0 0 1em 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.theme_light {
+
+  background-color: #fff;
+  color:#282c34;
+  transition: 0.5s background-color ease;
+
+  header .header__logo span {
+    color:#282c34;
+  }
+
+  .nav {
+    background-color: #e0e0e0;
+
+    * {
+      color: $black ;
+    }
+
+  }
+
+  .hamburger_button,
+  .contrast_button,
+  .accordion__button  {
+    color: $black ;
+  }
+
+  .home_grid {
+    .card {
+      svg {
+        path {
+          fill:$black ;
+          stroke: $black ;
+        }
+
+
+      }
+    }
+  }
+
+}
