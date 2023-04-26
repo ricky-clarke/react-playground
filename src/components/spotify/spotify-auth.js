@@ -1,13 +1,4 @@
-// Client id
-
-// Local site
-// const client_id = 'b496c2ceab6549fbb074dbb8d634d916';
-// const redirect_uri = 'http://localhost:3000/spotify';
-
-// Live site
-// const client_id = '79dc800c5eac48e1b0e1c0929277742d'; 
-// const redirect_uri = 'https://ricky-react-app-playground.netlify.app/spotify';
-
+// 
 
 // Permissions
 const scopes = [
