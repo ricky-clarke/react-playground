@@ -1,6 +1,4 @@
 import './wp-post.styles.scss';
-
-// import ImagePlaceholder from './g5-logo.svg';
 import { Link } from "react-router-dom";
 
 const WPPost = ({ id, title, post_date, img, link, category, post_type }) => {

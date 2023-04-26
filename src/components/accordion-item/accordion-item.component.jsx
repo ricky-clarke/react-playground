@@ -8,7 +8,7 @@ const AccordionItem = ({ accordionItems }) => {
   const [accordionDisplay, accordionToggle] = useState("collapsed");
 
   const accordionDisplayHandler = (event) => {
-    event.preventDefault();
+
     const get_button_attr_data = event.target.getAttribute("data");
     const button_attr_data = document.getElementById(
       "accordion__copy-" + get_button_attr_data

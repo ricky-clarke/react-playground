@@ -1,0 +1,18 @@
+@import '../../../../assets/styles/styles';
+
+.spotify_card--following {
+  
+    div {
+        height: 0;
+        padding-bottom:100%;
+        position: relative;
+
+        img {
+          height: 100%;
+          position: absolute;
+          inset: 0 0 0 0;
+          width: 100%;
+        }
+    }
+    
+}

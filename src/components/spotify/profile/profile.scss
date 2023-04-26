@@ -1,0 +1,84 @@
+@import '../../../assets/styles/styles';
+
+
+.spotify_profile_container {
+    display: grid;
+    padding: 1em 0 0 0;
+    grid-template-columns: 250px 1fr;
+
+    .spotify_container {
+        padding: 2em 3em 2em 3em;
+    }
+
+}
+
+.spotify_grid {
+
+    &--50 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:3em;
+    }
+
+    h2 {
+        font-size: 2em;
+        font-weight: 100;
+        letter-spacing: 5px;
+        margin:0 0 1em 0;
+    }
+
+}
+
+.spotify_carousel {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:2em;
+    margin-bottom:3em;
+
+    &--7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    img {
+        max-width:100%;
+    }
+
+}
+
+.spotify_play_button {
+    background:none;
+    border:0;
+    cursor: pointer;
+    padding:0;
+
+    svg {
+        scale:1;
+        transition: 0.3s all ease;
+        width:50px;
+    }
+
+    &:hover {
+        svg {
+            scale:1.1;
+            transition: 0.3s all ease;
+        }
+    }
+
+}
+
+.spotify_logout_link {
+    background:none;
+    border:0;
+    color:#fff;
+    cursor: pointer;
+    padding:0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.dark-bg {
+    background-color: #38444f;
+}

@@ -1,0 +1,55 @@
+.spotify_card {
+    background: linear-gradient(63deg, rgba(72,84,97,1) 12%, rgba(40,49,59,1) 82%);
+    border-radius: 10px;
+    box-shadow: rgba(000, 000, 000, 0.2) 0px 2px 8px 0px;
+    padding:1em;
+    position: relative;
+    transform:scale(1);
+    transition: 0.5s all ease;
+
+    div {
+        position: relative;
+
+        img {
+            border-radius: 10px;
+            box-shadow: rgba(000, 000, 000, 0.2) 0px 2px 8px 0px;
+        }
+    
+        .spotify_play_button {
+            position: absolute;
+            opacity: 0;
+            inset: auto 10px 0px auto;
+            transform: translateY(10px);
+            transition: 0.3s all ease;        
+        }
+    }
+
+    h3 {
+        font-size: 1.2em;
+        font-weight: 100;
+        margin:0.5em  0;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    a {
+        color:#fff;
+        text-decoration: none;
+    }
+
+    &:hover {
+
+        transform:translateY(-15px);
+        transition: 0.5s all ease;
+
+        .spotify_play_button {
+            opacity: 1;
+            transform: translateY(0);
+            transition: 0.5s all ease;
+        }
+
+    }
+
+}

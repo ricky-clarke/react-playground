@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import UserProvider from './context/user.context';
 import reportWebVitals from './reportWebVitals';
 import { GlobalStateProvider } from './context/global.context';
 
@@ -12,9 +11,7 @@ root.render(
   <React.StrictMode>
      <BrowserRouter>
      <GlobalStateProvider>
-        <UserProvider>
           <App />
-        </UserProvider>
         </GlobalStateProvider>
     </BrowserRouter>
   </React.StrictMode>

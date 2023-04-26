@@ -1,0 +1,103 @@
+.spotify_track {
+    align-items: center;
+    border-bottom:1px solid #485461;
+    display: flex;
+    gap:1em;
+    margin-bottom:0.5em;
+    padding-bottom:0.5em;
+
+    &:last-of-type {
+        border:0;
+        margin-bottom:0;
+        padding-bottom:0;
+    }
+
+    > div {
+
+        display: flex;
+        position: relative;
+
+        svg {
+            height:auto;
+            left:0;
+            position: absolute;
+            top:0;
+            transform: scale(0);
+            width:30px;
+        }
+
+        img {
+            border-radius: 50%;
+            height: 30px;
+            width:30px;
+            transform: scale(1);
+            transition: 0.5s transform ease;
+        }
+
+    }
+
+    .spotify_playing {
+        display: none;
+    }
+
+    &.track--playing {
+
+        .spotify_playing {
+            display: block;
+        }
+
+        img, svg {
+            opacity: 0;
+        }
+
+    }
+
+    button {
+        background:none;
+        border:0;
+        cursor: pointer;
+        inset: 0 0 0 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index:9;
+    }
+
+    a {
+        background:none;
+        border:0;
+        cursor: pointer;
+        inset: 0 0 0 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        z-index:9;
+    }
+
+    h3 {
+        display: flex;
+        font-size:1.1em;
+        font-weight: 100;
+        justify-content: space-between;
+        line-height:1.5em;
+        margin:0;
+        text-align: left;
+        width: 100%;
+    }
+
+    &:has(button):hover {
+
+        img {
+            transform: scale(0);
+            transition: 0.5s transform ease;
+        }
+
+        svg {
+            transform: scale(1);
+            transition: 0.5s transform ease;
+        }
+
+    }
+
+
+}

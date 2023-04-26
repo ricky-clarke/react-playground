@@ -26,22 +26,19 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/to-do-list">To do list</NavLink>
-          </li>
-          <li>
-            <NavLink to="/accordion">Accordion</NavLink>
-          </li>
-          <li>
-            <NavLink to="/users">Users</NavLink>
-          </li>
-          <li>
-            <NavLink to="/dashboard">Dashboard</NavLink>
+            <NavLink to="/spotify">Spotify API</NavLink>
           </li>
           <li>
             <NavLink to="/wp-posts">WP Posts</NavLink>
           </li>
           <li>
-            <NavLink to="/context">Context</NavLink>
+            <NavLink to="/users">Users</NavLink>
+          </li>
+          <li>
+            <NavLink to="/to-do-list">To do list</NavLink>
+          </li>
+          <li>
+            <NavLink to="/accordion">Accordion</NavLink>
           </li>
         </ul>
       </div>

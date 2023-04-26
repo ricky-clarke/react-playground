@@ -36,9 +36,11 @@
 
         svg {
             height: auto;
+            position: relative;
             rotate: 0;
             width:20px;
             transition: 0.1s rotate ease-in-out;
+            z-index:-1;
         }
 
         &--selected {

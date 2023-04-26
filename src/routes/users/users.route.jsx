@@ -31,6 +31,8 @@ const onSearchChange = (event) => {
     return !users.length ?
         <h1>Loading</h1> :
             <div className="container">
+                <h1>Users</h1>
+                <p>Users pulled in https://jsonplaceholder.typicode.com/users</p>
              <SearchField searchChange={onSearchChange} />
              <UserList users={filteredUsers} />
             </div>

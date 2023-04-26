@@ -1,0 +1,59 @@
+@import '../../../assets/styles/styles';
+
+.spotify_sidebar {
+    background:linear-gradient(63deg, rgb(40, 49, 59) 12%, rgb(72, 84, 97) 82%);
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2em;
+    position: relative;
+
+    &__top {
+        margin-bottom:2em;
+    }
+
+    > div {
+        position: sticky;
+        top:20px;
+    }
+
+    ul {
+        list-style: none;
+        margin:0;
+        max-height: 350px;
+        overflow: auto;
+        padding:0 0 1em 0;
+
+             /* width */
+             &::-webkit-scrollbar {
+                background: $spotify_green;
+                width: 3px;
+            }
+    
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #ccc;
+            }
+    
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: green;
+            }
+    
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: darken($spotify_green, 8);
+            }
+
+        li {
+            margin-bottom:1em;
+        }
+    }
+
+    a {
+        color:#fff;
+        text-decoration: none;
+    }
+
+}

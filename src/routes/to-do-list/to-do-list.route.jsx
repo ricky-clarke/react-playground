@@ -50,9 +50,10 @@ const ToDoList = () => {
     }
 
     return(
-            <div>
+            <div className="container">
                {/* <PageHeader pageTitle={'To Do list'} />
                <Introduction pageIntroduction={'TDL page intro'} /> */}
+                <h1>To do list</h1>
                <div className="to_do_list">
                     <div>
                         <form onSubmit={onFormSubmit}>

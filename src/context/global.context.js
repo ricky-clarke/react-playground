@@ -4,6 +4,8 @@ import { GlobalReducer, INITIAL_STATE } from "../reducers/global.reducer";
 // Create the context/provider
 export const globalContext = createContext();
 
+export default globalContext;
+
 export const GlobalStateProvider = ({ children }) => {
 
     // Create the reducer

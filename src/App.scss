@@ -1,22 +1,23 @@
 @import './assets/styles/styles';
 
 body {
-  background-color: #282c34;
+  // background-color: #282c34;
+  background: linear-gradient(63deg, rgba(40,49,59,1) 12%, rgba(72,84,97,1) 82%);
   color:#fff;
-  min-height: 100vh;
+   min-height: 100dvh;
   transition:0.5s background-color ease;
 }
 
 #root {
-  height:100vh;
-  height: 100dvh;
+  min-height:100vh;
+  min-height: 100dvh;
 }
 
 .App__main {
-  // min-height: calc(100dvh - 103px);
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
+  min-height: calc(100dvh - 103px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -65,8 +66,8 @@ p {
 }
 
 .theme_light {
-
-  background-color: #fff;
+  // background-color: #fff;
+  background: linear-gradient(63deg, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 50%);
   color:#282c34;
   transition: 0.5s background-color ease;
 

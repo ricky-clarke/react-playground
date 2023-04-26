@@ -1,6 +1,8 @@
 export const INITIAL_STATE = {
     menuOpen: false,
-    contrastButton : 'dark'
+    contrastButton : 'dark',
+    spotifyToken : '',
+    spotifyTrackURI : ''
 };
 
 // update state return new version of state
@@ -18,6 +20,16 @@ export const GlobalReducer = (state, action) => {
               ...state,
               contrastButton: action.payload
             };
+          case "SPOTIFY_TOKEN":
+                return {
+                  ...state,
+                  spotifyToken: action.payload
+            };
+            case "SPOTIFY_TRACK_URI":
+              return {
+                ...state,
+                spotifyTrackURI: action.payload
+          };
         default:
           return state;
       }

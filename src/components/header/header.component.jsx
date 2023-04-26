@@ -6,7 +6,7 @@ import ContrastButton from "../contrast-button/contrast-button-component";
 import logo from '../../logo.svg';
 
 const Header = () => {
-
+    
     return(
             <header>
 
