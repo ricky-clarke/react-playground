@@ -7,6 +7,7 @@ import { SpotiftIcon } from "../../components/svgs/spotify-icon";
 import { WordPress } from "../../components/svgs/wordpress.svg";
 
 const Home = () => {
+
   return (
     <>
       <div className="home_grid">
