@@ -1,4 +1,4 @@
-// 
+// Spotify config
 
 // Permissions
 const scopes = [
