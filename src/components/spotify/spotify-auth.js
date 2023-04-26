@@ -1,9 +1,10 @@
 // Client id
 
 // Local site
-const API_KEY =`${process.env.REACT_APP_SPOTIFY_CLIENT_ID}`
-const client_id = API_KEY;
-const redirect_uri = 'http://localhost:3000/spotify';
+const CLIENT_API_KEY = `${process.env.REACT_APP_SPOTIFY_CLIENT_ID}`
+const URL_REDIRECT = `${process.env.REACT_APP_SPOTIFY_REDIRECT}`
+const client_id = CLIENT_API_KEY;
+const redirect_uri = URL_REDIRECT;
 
 // Permissions
 const scopes = [
