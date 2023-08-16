@@ -1,4 +1,6 @@
 @import '../../assets/styles/styles';
+@import "../../assets/styles/common/vars.scss";
+@import "../../assets/styles/common/mixins.scss";
 
 .hamburger_button {
 
@@ -7,13 +9,17 @@
     color:#fff;
     cursor: pointer;
     font-family: inherit;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 100;
     letter-spacing: 5px;
     padding: 0;
     position:relative;
-    width:70px;
     z-index:99;
+
+    @include min-lg {
+        font-size: 1.3rem;
+        width:70px;
+    }
 
     &:hover {
         color: $gold;

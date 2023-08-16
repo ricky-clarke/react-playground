@@ -16,7 +16,7 @@ const PlayList = () => {
         <>
             <div className="spotify_profile_container">
                 <SpotifySidebar />
-                <div>
+                <div className="spotify_profile__right">
                     <SpotifyHeader name={state.playList_name} img="" />
                     <div className="spotify_grid">
                         <div className='spotify_container'>
@@ -24,12 +24,11 @@ const PlayList = () => {
                                 
                                 <div className="spotify_track_list">
 
-                                    { data['tracks']['items'].map((get_track, i) => {
+                                    {/* { data['tracks']['items'].map((get_track, i) => {
 
                                     return( 
 
-                                        <TrackRow
-                                            key_data={i}
+                                        <TrackRow key={i}
                                             img = {get_track.track.album.images[1].url}
                                             track_uri = {get_track.uri}
                                             track_name = { get_track.track['name']}
@@ -39,10 +38,9 @@ const PlayList = () => {
                                         
                                     )
                                     })
-                                } 
+                                }  */}
                             
                                 </div>
-
                             </div>
                         </div>
 

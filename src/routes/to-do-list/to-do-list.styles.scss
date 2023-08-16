@@ -1,16 +1,25 @@
-.to_do_list {
+@import '../../assets/styles/common/mixins';
 
+.to_do_list {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 425px;
     max-width: 900px;
     margin:3em auto;
     gap: 3em;
 
+    @include min-lg {
+        grid-template-columns: 1fr 425px;
+    }
+
     form {
         display: flex;
+        flex-direction: column;
         height: 70px;
         justify-content: center;
+
+        @include min-lg {
+            flex-direction: row;
+        }
 
         input {
             font-size:1.4em;

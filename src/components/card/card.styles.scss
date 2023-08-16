@@ -1,4 +1,5 @@
 @import '../../assets/styles/styles';
+@import "../../assets/styles/common/mixins";
 
 .card {
 
@@ -10,14 +11,24 @@
     }
 
     h3 {
-        font-size: 1.3em;
+        font-size: 1.1em;
         font-weight: 100;
         letter-spacing: 5px;
+
+        @include min-xl {
+            font-size: 1.3em;
+        }
+
     }
 
     svg {
         height: auto;
-        width: 80%;
+        width: 60%;
+
+        @include min-xl {
+            width: 80%;
+        }
+
     }
 
     a {

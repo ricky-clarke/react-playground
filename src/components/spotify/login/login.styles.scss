@@ -32,6 +32,7 @@
         border:0;
         border-radius: 10px;
         color:#fff;
+        display: inline-block;
         font-size:1em;
         padding:0.75em 3em;
         text-decoration: none;
@@ -42,6 +43,12 @@
             cursor: pointer;
         }
 
+    }
+
+    p {
+        font-size:0.9em;
+        margin-block: 1.5em 0;
+        text-align:center;
     }
 
 
@@ -59,6 +66,7 @@
 
     a.spotify_login_btn {
         background-color: #000;
+
     }
 
 }

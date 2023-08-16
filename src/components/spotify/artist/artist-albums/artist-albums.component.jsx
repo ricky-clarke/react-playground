@@ -11,8 +11,7 @@ const ArtistAlbums = ({artistID}) => {
             <div className="spotify_carousel">
             { data && data.items.map((album, i) => {
                 return( 
-                    <SpotifyCard 
-                    key_count = {i}
+                    <SpotifyCard key={i}
                     img = {album.images[1].url}
                     track_name = {album.name}
                      track_uri = {album.uri}

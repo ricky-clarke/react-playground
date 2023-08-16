@@ -25,9 +25,9 @@ const Navigation = () => {
               Home
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/spotify">Spotify API</NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/wp-posts">WP Posts</NavLink>
           </li>

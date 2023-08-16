@@ -19,7 +19,7 @@ const SpotifyProfile = () => {
 
                 <SpotifySidebar />
 
-                <div>
+                <div className="spotify_profile__right">
 
                     <SpotifyHeader name={display_name} img={null}  />         
 

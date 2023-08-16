@@ -1,7 +1,19 @@
+@import "../../assets/styles/common/vars";
+@import "../../assets/styles/common/mixins";
+
 .home_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(110px, 140px));
     justify-content: center;
-    gap: 8em;
+    gap: 2em;
     padding: 5% 10%;
+
+    @include min-md {
+        gap: 4em;
+    }
+
+    @include min-xl {
+        gap: 7em;
+    }
+
 }

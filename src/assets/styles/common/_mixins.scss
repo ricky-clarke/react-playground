@@ -1,0 +1,61 @@
+@import '../common/vars';
+
+@mixin min-sm {
+    @media (min-width: $container_sm) {
+      @content;
+    }
+  }
+  
+  @mixin max-sm {
+    @media (max-width: $container_sm) {
+      @content;
+    }
+  }
+  
+  @mixin min-md {
+    @media (min-width: $container_md) {
+      @content;
+    }
+  }
+  
+  @mixin max-md {
+    @media (max-width: $container_md) {
+      @content;
+    }
+  }
+  
+  @mixin min-lg {
+    @media (min-width: $container_lg) {
+      @content;
+    }
+  }
+  
+  @mixin max-lg {
+    @media (max-width: $container_lg) {
+      @content;
+    }
+  }
+  
+  @mixin min-xl {
+    @media (min-width: $container_xl) {
+      @content;
+    }
+  }
+  
+  @mixin max-xl {
+    @media (max-width: $container_xl) {
+      @content;
+    }
+  }
+
+  @mixin min-xxl {
+    @media (min-width: $container_xxl) {
+      @content;
+    }
+  }
+
+  @mixin max-xxl {
+    @media (max-width: $container_xxl) {
+      @content;
+    }
+  }

@@ -27,8 +27,9 @@ const SpotifySidebar = ({ logout }) => {
 
                 <div className='spotify_sidebar__top'>
                     <ul>
-                        <li><Link to={`/spotify/`}>Home</Link></li>
-                        <li><Link to={`/`}>Search</Link></li>
+                        <li><Link to={`/spotify/`}>Profile</Link></li>
+                        <li><button className="spotify_logout_link" onClick={logoutHandler}>Sign out</button></li>
+                        {/* <li><Link to={`/`}>Search</Link></li> */}
                     </ul>
 
                     <hr />
@@ -59,7 +60,7 @@ const SpotifySidebar = ({ logout }) => {
 
                     <div>
                         <hr />
-                        <button className="spotify_logout_link" onClick={logoutHandler}>Sign out</button>
+                    
                         <br></br><br/>
                         <Link to={`/`}>App home page</Link>
                      </div>

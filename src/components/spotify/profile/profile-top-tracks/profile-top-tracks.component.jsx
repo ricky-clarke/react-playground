@@ -13,8 +13,7 @@ const ProfileTopTracks = ({ title }) => {
                 <div className="spotify_track_list">
                 { data && data.items.map((track, i) => {
                         return( 
-                            <TrackRow
-                            key_count = {i}
+                            <TrackRow key={i}
                             img = {track.album.images[0].url}
                             track_uri = {track.uri}
                             track_name = {track.name}

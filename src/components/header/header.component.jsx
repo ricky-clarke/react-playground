@@ -10,11 +10,12 @@ const Header = () => {
     return(
             <header>
 
-                <Link to='/'>
-                    <div className='header__logo'>
+                <div className='header__logo'>
+                    <Link to='/'>
                         <img src={logo} className="App-logo" alt="logo" /> <span>React playground</span>
-                    </div>
-                </Link>
+                    </Link>
+                </div>
+
 
                 <div className="header__buttons">
                     <ContrastButton />

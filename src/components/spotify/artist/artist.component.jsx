@@ -17,7 +17,7 @@ const SpotifyArtist = () => {
 
                 <SpotifySidebar />
 
-                <div>
+                <div className="spotify_profile__right">
 
                 <SpotifyHeader name={state.artistName} logout='false' img={state.artistImg} />
 

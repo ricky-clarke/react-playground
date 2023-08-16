@@ -17,10 +17,8 @@ const ArtistLastest = ({title}) => {
             <div className="spotify_card spotify_card--popular">
                 <div className="spotify_track_list">
                         { data && data.items.map((track, i) => {
-
                             return( 
-                                <TrackRow
-                                    key_data={i}
+                                <TrackRow key={i}
                                     img = {track.images[1].url}
                                     track_uri = {track.uri}
                                     track_name = { track.name}

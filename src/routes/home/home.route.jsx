@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className="home_grid">
-      <Card title={"Spotify API"} link={"spotify"} img={<SpotiftIcon />} />
+      {/* <Card title={"Spotify API"} link={"spotify"} img={<SpotiftIcon />} /> */}
       <Card title={"WordPress API"} link={"wp-posts"} img={<WordPress />} />
       <Card title={"Users"} link={"users"} img={<Users />} />
       <Card title={"To do list"} link={"to-do-list"} img={<ToDoListSVG />} />

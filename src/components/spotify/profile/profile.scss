@@ -1,13 +1,32 @@
 @import '../../../assets/styles/styles';
-
+@import '../../../assets/styles/common/mixins';
 
 .spotify_profile_container {
     display: grid;
     padding: 1em 0 0 0;
-    grid-template-columns: 250px 1fr;
+
+    @include min-lg {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+    }
 
     .spotify_container {
-        padding: 2em 3em 2em 3em;
+        padding: 2em;
+
+        @include min-lg {
+            padding: 2em 3em 2em 3em;
+        }
+
+    }
+
+}
+
+.spotify_profile__right {
+    order:1;
+    overflow-x: hidden;
+
+    @include min-lg {
+        order:2;
     }
 
 }
@@ -16,15 +35,25 @@
 
     &--50 {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap:3em;
+        gap:1em;
+
+        @include min-md {
+            grid-template-columns: repeat(2, 1fr);
+            gap:3em;
+        }
+
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 100;
         letter-spacing: 5px;
         margin:0 0 1em 0;
+
+        @include min-lg {
+            font-size: 2em;
+        }
+
     }
 
 }

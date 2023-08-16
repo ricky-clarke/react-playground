@@ -1,3 +1,5 @@
+@import "../../assets/styles/common/mixins.scss";
+
 header {
     align-items: center;
     display: flex;
@@ -9,14 +11,27 @@ header {
     }
 
     .header__logo {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
+     
+        a {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
 
         span {
-            font-size:1.5rem;
-            font-weight: 100;
-            letter-spacing: 5px;
+            display: none;
+           
+            @media(min-width:460px) {
+                display: block;
+                font-size:1.1rem;
+                font-weight: 100;
+                letter-spacing: 5px;
+            }
+
+            @include min-lg {
+                font-size:1.5rem;
+            }
+
         }
 
         span {
@@ -25,13 +40,22 @@ header {
         }
 
         .App-logo {
-            width: 100px;
+            width: 60px;
+
+            @include min-lg {
+                width: 100px;
+            }
+
           }
 
     }
 
     .header__buttons {
         display: flex;
+
+        .contrast_button {
+            display: none;
+        }
 
         .hamburger_button {
             margin-left:2.5em;
